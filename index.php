@@ -267,7 +267,18 @@
                     </div>
                     <div class="col-lg-7">
                         <div class="contact-card">
-                            <form method="get">
+                            <form method="POST" action="controller/contact.php">
+
+                            <?php
+
+        if(isset($_GET['success']) && $_GET['success'] == 1) {
+            echo '<div class="alert alert-success" role="alert">Your message has been sent successfully. We will get back to you soon.</div>';
+        } elseif(isset($_GET['error']) && $_GET['error'] == 1) {
+            echo '<div class="alert alert-danger" role="alert">Something went wrong. Please try again later.</div>';
+        }
+
+?>
+
                                 <div class="row g-3">
                                     <div class="col-md-6">
                                         <label value class="form-label" for="firstName">First Name</label>

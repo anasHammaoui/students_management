@@ -6,9 +6,8 @@ $dbname = "students_management";
 
 try {
   $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
- echo "Connected successfully";
-} catch(PDOException $e) {
-  echo "Connection failed: "  . $e->getMessage();
-}
+  } catch(PDOException $e) {
+  die("connection");
+  }
 
 echo "<br>";
