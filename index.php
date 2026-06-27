@@ -267,31 +267,28 @@
                     </div>
                     <div class="col-lg-7">
                         <div class="contact-card">
-                            <form>
+                            <form method="get">
                                 <div class="row g-3">
                                     <div class="col-md-6">
-                                        <label class="form-label" for="name">Your name</label>
-                                        <input class="form-control" id="name" type="text" placeholder="Jane Smith" />
+                                        <label value class="form-label" for="firstName">First Name</label>
+                                        <input class="form-control" id="firstName" type="text" placeholder="First Name" name="firstName" />
                                     </div>
                                     <div class="col-md-6">
-                                        <label class="form-label" for="email">Work email</label>
-                                        <input class="form-control" id="email" type="email" placeholder="jane@school.edu" />
+                                           <label class="form-label" for="lastName">Last Name</label>
+                                        <input class="form-control" id="lastName" type="text" placeholder="Last Name" name="lastName" />
+                                       
                                     </div>
-                                    <div class="col-md-6">
-                                        <label class="form-label" for="school">School or district</label>
-                                        <input class="form-control" id="school" type="text" placeholder="North Valley High" />
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label class="form-label" for="role">Role</label>
-                                        <input class="form-control" id="role" type="text" placeholder="Administrator" />
+                                    <div class="col-md-12">
+                                      <label class="form-label" for="number">Phone Number</label>
+                                        <input class="form-control" id="number" type="text" placeholder="Phone Number" name="number" />
                                     </div>
                                     <div class="col-12">
-                                        <label class="form-label" for="message">What do you want to improve?</label>
-                                        <textarea class="form-control" id="message" rows="5" placeholder="Attendance, grades, parent communication, admissions, or all of the above."></textarea>
+                                        <label class="form-label" for="message">Message?</label>
+                                        <textarea class="form-control" id="message" rows="5" placeholder="Message." name="message"></textarea>
                                     </div>
                                     <div class="col-12 d-flex flex-column flex-sm-row gap-3 align-items-sm-center justify-content-between">
                                         <p class="small text-muted mb-0">Tell us about your campus and we’ll tailor the walkthrough.</p>
-                                        <button class="btn btn-primary btn-xl text-uppercase" type="submit">Schedule demo</button>
+                                        <button class="btn btn-primary btn-xl text-uppercase" type="submit">Submit</button>
                                     </div>
                                 </div>
                             </form>
